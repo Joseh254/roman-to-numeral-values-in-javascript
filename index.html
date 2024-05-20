@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert arabic numeral to roman numeral</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h1 id="main-title">    Convert arabic numeral to roman numeral</h1>
+      <p>You can only convert numbers between 1 and 4000000</p>
+    </header>
+
+    <form class="input-form">
+      <div class="user-input">
+        <label for="number" class="user-input-label">Number to convert</label>
+        <input type="number" id="number" class="user-input--input">
+        <p class="error" id="error"></p>
+      </div>
+      <button class="convert-button" id="convert-button" type="button">convert</button>
+    </form>
+    <h2 class="output" id="output"></h2>
+   
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

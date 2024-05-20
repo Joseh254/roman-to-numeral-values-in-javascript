@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+:root {
+  --color-primary: #007BFF;
+  --color-primary-light: #2680D9;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: var(--color-primary);
+  gap: 1rem;
+}
+
+.header h1, .header p {
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.header p {
+  font-weight: 500;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-input label {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+
+.user-input--input {
+  padding: 2rem 3rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error {
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 31.25em) {
+  .input-form {
+    width: 100vw;
+  }
+
+  .user-input label {
+    width: 100%;
+  }
+
+  .user-input--input {
+    width: 100%;
+  }
+
+  .output {
+    width: 100vw;
+  }
+}
+
+.convert-button {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.output {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+}
